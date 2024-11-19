@@ -1,0 +1,23 @@
+/* widget-styles.css */
+.datetime-container {
+    background-color: #032f30; /* Dark blue-green */
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #ffffff;
+    position: absolute; /* Position at the top of the page */
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px; /* Make the text small but readable */
+}
+
+.datetime-display {
+    padding: 3px 8px;
+    background-color: #0a7075; /* Muted teal */
+    border-radius: 3px;
+    color: #ffffff; /* White text */
+    font-weight: bold;
+    display: inline-block; /* Keeps the time compact */
+}

@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #031716; /* Dark green-blue */
+    color: #6ba3be; /* Light shade for general text */
+}
+
+.login-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #032f30; /* Dark blue-green */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0c969c; /* Light teal for headings */
+}
+
+label {
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #6ba3be; /* Lighter shade for labels */
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #0a7075; /* Border matching muted teal */
+    border-radius: 4px;
+    background-color: #274d60; /* Blue-gray background for inputs */
+    color: #fff; /* White text for input */
+}
+
+button {
+    width: 45%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0a7075; /* Muted teal for buttons */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6ba3be; /* Light blue on hover */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}

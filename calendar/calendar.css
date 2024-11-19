@@ -1,0 +1,217 @@
+/* General reset for margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #031716; /* Dark green-blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #6ba3be; /* Lighter shade for text */
+}
+
+.calendar-container {
+    background-color: #032f30; /* Dark blue-green */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 420px;
+    text-align: center;
+}
+
+.current-date-label {
+    font-size: 16px;
+    color: #9c91ff; /* Light teal */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 1px;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+#calendar div {
+    padding: 10px;
+    background-color: #0a7075; /* Muted teal */
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff; /* White for contrast */
+}
+
+#calendar div.clicked {
+    background-color: #ff0000; /* Bright red for selected date */
+    color: #ffffff; /* White text for contrast */
+    font-weight: bold;
+}
+
+#calendar div:hover {
+    background-color: #20d8e6; /* Green shade for hover */
+    color: #ffffff; /*rgb(17, 217, 224)text for better contrast */
+    cursor: pointer; /* Indicates interactivity */
+    font-weight: bold;
+}
+
+button {
+    padding: 5px 5px;
+    background-color: #274d60; /* Blue-gray */
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0a7075; /* Teal shade for hover */
+}
+
+.next-button {
+    margin-top: 15px;
+}
+
+/* Plan and Task Containers */
+.plan {
+    background-color: #032f30; /* Dark blue-green */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    color: #ffffff; /* White text */
+}
+
+.plan {
+    border-left: 5px solid #0a7075; /* Muted teal left border */
+}
+
+/* Hover effect for both containers */
+.plan:hover, .task:hover {
+    background-color: #0a7075; /* Muted teal background on hover */
+}
+
+/* Adding some extra styling for titles within each container */
+.plan h2, .task h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #9c91ff; /* Light teal for headings */
+}
+
+/* Content inside the containers */
+.plan p, .task p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #6ba3be; /* Lighter shade for text */
+}
+
+#username-display {
+    background-color: #0a7075; /* Muted teal background */
+    color: #ffffff; /* White text for contrast */
+    border-left: 4px solid #88d0d4; /* Light teal border */
+    padding: 10px 15px;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Slightly smaller font size */
+    font-weight: bold; /* Highlight the username display */
+    position: absolute; /* Position relative to the page */
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    z-index: 1000; /* Ensure it stays above other elements */
+    text-align: center; /* Center-align the text */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.task {
+    background-color: #032f30; /* Dark blue-green */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    color: #ffffff; /* White text */
+    width: 300px; /* Adjust width */
+    text-align: left; /* Align text to the left */
+}
+
+.task h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #9c91ff; /* Light teal for headings */
+}
+
+/* Task details styling */
+.task p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #6ba3be; /* Lighter shade for text */
+}
+
+.task span {
+    font-weight: bold;
+    color: #007BFF; /* Blue color for the values */
+}
+
+/* Task Settings */
+.task-settings {
+    background-color: #032f30; /* Dark blue-green */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    color: #ffffff; /* White text */
+    width: 300px; /* Adjust width */
+    text-align: left; /* Align text to the left */
+}
+
+.task-settings label {
+    font-size: 0.9rem;
+    color: #6ba3be; /* Lighter text for labels */
+    margin-right: 10px;
+}
+
+.task-settings input[type="number"] {
+    padding: 8px;
+    font-size: 1rem;
+    width: 60px;
+    border: 1px solid #6ba3be;
+    border-radius: 4px;
+    margin: 5px 0 10px;
+    outline: none;
+}
+
+.task-settings input[type="number"]:focus {
+    border-color: #9c91ff; /* Focused border in light teal */
+}
+
+.task-settings input[type="checkbox"] {
+    margin-left: 10px;
+    transform: scale(1.2); /* Enlarge checkbox slightly */
+}
+
+/* Hover effects for task and settings container */
+.task:hover, .task-settings:hover {
+    background-color: #063c3f; /* Muted teal background on hover */
+}
+
+/* Task settings layout adjustment */
+.task-settings {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between items */
+}
+
+.task-settings input {
+    margin-top: 5px;
+}

@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #031716;
+    color: #6ba3be;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.date-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #032f30;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content-container {
+    margin-top: 20px;
+    padding: 10px;  /* Adjusted padding */
+    background-color: #0a7075; /* Muted teal background for content */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;  /* Ensures text is centered */
+    color: white;  /* Makes the text visible against the teal background */ 
+    margin: 0 auto;  /* Centers the container horizontally */
+    display: block;
+    position: relative;  /* Make the container a positioned element */
+}
+
+#average-label {
+    font-size: 24px;  /* Adjust the font size for visibility */
+    font-weight: bold;  /* Make it bold */
+}
+
+#average-result {
+    position: absolute;
+    top: 0; /* Positions the element at the top of the .content-container */
+    left: 50%; /* Centers it horizontally */
+    transform: translateX(-50%); /* Adjusts the centering by moving it 50% of its own width */
+    margin-top: 0; /* Remove any margin, if needed */
+}
+
+h4 {
+    font-size: 16px;
+    color: #ffffff;  /* White color for the note text */
+    font-weight: normal; /* Adjust the font-weight to normal for the note */
+    margin-top: 10px;  /* Add margin to separate from the previous content */
+}
+
+/* Style the additional container */
+.additional-container {
+    background-color: #031716;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+/* Style for each slider container */
+.slider-container {
+    margin-bottom: 15px;
+}
+
+/* Label styling */
+.slider-container label {
+    display: block;
+    color: #0c969c;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Slider styling */
+.slider-container input[type="range"] {
+    width: 100%;
+    appearance: none;
+    background-color: #274d60;
+    height: 5px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Thumb styling for the slider */
+.slider-container input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #0a7075;
+    border-radius: 50%;
+    border: 2px solid #6ba3be;
+}
+
+.slider-container input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background-color: #0a7075;
+    border-radius: 50%;
+    border: 2px solid #6ba3be;
+}
+
+/* Slider value display styling */
+.slider-container span {
+    color: #6ba3be;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.planner{
+    margin-right: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #032f30;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.note {
+    background-color: #1a3b44;  /* Dark blue-green background */
+    border-left: 4px solid #56b3a6;  /* Light teal border */
+    color: #b0c7c2;  /* Lighter shade of teal for text */
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.note label {
+    font-weight: bold;
+    color: #56b3a6;  /* Light teal color for the label */
+    margin-bottom: 5px;
+    display: block;
+}
+
+.note textarea {
+    width: 80%;
+    padding: 8px;
+    background-color: #1a3b44;
+    color: #b0c7c2;
+    border: 1px solid #56b3a6;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 120px;  /* Adjust height for better space */
+    resize: none;  /* Disable resizing */
+}
+
+.note textarea:focus {
+    border-color: #4e8d88;  /* Slightly darker teal on focus */
+    outline: none;  /* Remove default outline */
+}
+
+#save-planner {
+    background-color: #2C6E5F;  /* Dark teal background */
+    color: #E0F4F1;  /* Light teal text color */
+    border: 1px solid #2C6E5F;  /* Matching dark teal border */
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border 0.3s ease;
+    margin: 10px 0;
+}
+
+/* On hover: lighten the background and border */
+#save-planner:hover {
+    background-color: #3B8D7E;  /* Slightly lighter teal */
+    border: 2px solid #3B8D7E;  /* Border lightens to match */
+    color: #FFFFFF;  /* White text on hover */
+}
+
+/* On focus: Add subtle outline to show focus */
+#save-planner:focus {
+    outline: 2px solid #E0F4F1;  /* Light teal focus outline */
+    outline-offset: 2px;
+}

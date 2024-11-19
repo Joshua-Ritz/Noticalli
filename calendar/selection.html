@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selected Date</title>
+    <link rel="stylesheet" href="widget.css">
+    <link rel="stylesheet" href="selection.css">
+</head>
+<body>
+    
+    <div class="planner">
+        <label for="time-select">Select Time:</label>
+        <div class="time-picker">
+            <select id="hours" name="hours"></select>
+            <span>:</span>
+            <select id="minutes" name="minutes"></select>
+            <select id="ampm" name="ampm"></select>
+        </div>
+        <div class="note">
+            <label for="note-textbox">Note (optional):</label>
+            <textarea id="note-textbox" placeholder="Enter your note here..."></textarea>
+        </div>
+        <button id="save-planner">Save</button>
+
+    </div>
+
+    <div class="date-container">
+        <h1>Selected Date</h1>
+        <!-- This will display the selected date or a default message -->
+        <p id="selected-date">Loading...</p>
+        <h4>note: you can adjust your task based on the result you got.</h4>
+        <!-- Container for custom content -->
+        <div class="content-container">
+            <!-- This will display the average result -->
+            <span id="average-label"></span>
+        </div> <!-- End of content container -->
+        
+        <div class="additional-container">
+            <div class="slider-container">
+                <label for="slider1">Break Duration During Work Sessions</label>
+                <input type="range" id="slider1" min="1" max="10" value="5">
+                <span id="sliderValue1">5</span>
+            </div>
+            <div class="slider-container">
+                <label for="slider2">Less Screen Time During Working Hours</label>
+                <input type="range" id="slider2" min="1" max="10" value="5">
+                <span id="sliderValue2">5</span>
+            </div>
+            <div class="slider-container">
+                <label for="slider3">Physical Activity During Work Hours</label>
+                <input type="range" id="slider3" min="1" max="10" value="5">
+                <span id="sliderValue3">5</span>
+            </div>
+            <div class="slider-container">
+                <label for="slider4">Frequency of Drinks or Snacks During Work Hours</label>
+                <input type="range" id="slider4" min="1" max="10" value="5">
+                <span id="sliderValue4">5</span>
+            </div>
+        <!-- Button to go back to the login page -->
+    </div>
+
+
+    <!-- External script to handle JavaScript logic -->
+    <script src="widget.js" defer></script>
+    <script src="selection.js"></script>
+
+
+</body>
+
+<div id="floating-logo">
+    <a href="LoginPage.html">
+        <img src="transparent logo.png" alt="Logo">
+    </a>
+</div>
+
+<link rel="stylesheet" href="logo.css">
+<script src="logo.js" defer></script>
+
+</html>

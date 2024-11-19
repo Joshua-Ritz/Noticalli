@@ -1,0 +1,19 @@
+#floating-logo {
+    position: fixed; /* Keeps it visible on scroll */
+    top: 10px; /* Distance from the top */
+    left: 10px; /* Distance from the left */
+    z-index: 1000; /* Ensures it appears above other elements */
+}
+
+#floating-logo img {
+    width: 80px; /* Adjust as needed */
+    height: 80px; /* Ensure it's square */
+    cursor: pointer; /* Indicate it's clickable */
+    border-radius: 50%; /* Optional: make it circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
+}
+
+#floating-logo img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+}

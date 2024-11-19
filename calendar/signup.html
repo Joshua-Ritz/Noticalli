@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="widget.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="signup-container">
+            <h2>Create Account</h2>
+            <form id="signupForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <button onclick="window.location.href='loginPage.html'">Back to Login</button>
+        </div>
+
+        <div class="additional-container">
+            <div class="slider-container">
+                <label for="slider1">Break Duration During Work Sessions</label>
+                <input type="range" id="slider1" min="1" max="10" value="5">
+                <span id="sliderValue1">5</span>
+            </div>
+            <div class="slider-container">
+                <label for="slider2">Less Screen Time During Working Hours</label>
+                <input type="range" id="slider2" min="1" max="10" value="5">
+                <span id="sliderValue2">5</span>
+            </div>
+            <div class="slider-container">
+                <label for="slider3">Physical Activity During Work Hours</label>
+                <input type="range" id="slider3" min="1" max="10" value="5">
+                <span id="sliderValue3">5</span>
+            </div>
+            <div class="slider-container">
+                <label for="slider4">Frequency of Drinks or Snacks During Work Hours</label>
+                <input type="range" id="slider4" min="1" max="10" value="5">
+                <span id="sliderValue4">5</span>
+            </div>
+
+                    <!-- Result container placed outside -->
+        <div class="result-container">
+            <span id="average-label">Fine</span>
+        </div>
+        </div>
+
+
+
+    </div>
+
+    
+    </div>
+    <script src="widget.js" defer></script>
+    <script src="signup.js"></script>
+</body>
+
+<div id="floating-logo">
+    <a href="LoginPage.html">
+        <img src="transparent logo.png" alt="Logo">
+    </a>
+</div>
+
+<link rel="stylesheet" href="logo.css">
+<script src="logo.js" defer></script>
+
+</html>

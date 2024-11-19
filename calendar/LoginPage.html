@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="LoginPage.css">
+    <script src="loginPage.js" defer></script> <!-- External JS file -->
+</head>
+<body>
+    <div class="login-container">
+        <h2>NotiCali.</h2>
+        <form id="loginForm" onsubmit="return validateForm(event);">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <div class="button-container">
+                <!-- Login Button: Triggers form validation -->
+                <button type="submit">Login</button>
+
+                <!-- Signup Button: Bypasses validation -->
+                <button type="button" onclick="window.location.href='signup.html'">Signup</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+<div id="floating-logo">
+    <a href="LoginPage.html">
+        <img src="transparent logo.png" alt="Logo">
+    </a>
+</div>
+
+<link rel="stylesheet" href="logo.css">
+<script src="logo.js" defer></script>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="widget.css">
+    <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+
+    <div id="username-display">
+
+    </div>
+
+
+    <div class="calendar-container">
+        <!-- Label for the current date -->
+        <div id="current-date-label" class="current-date-label"></div>
+
+        <div class="calendar-header">
+            <button id="prev-year">&lt; Years</button>
+            <button id="prev-month">&lt; Month</button>
+            <h3 id="calendar-title"></h3>
+            <button id="next-month">Month &gt;</button>
+            <button id="next-year">Years &gt;</button>
+        </div>
+        <div id="calendar"></div>
+        <button id="next-button" class="next-button">Next</button>
+    </div>
+
+    <div class="plan">
+        <h2>Your Selected Time</h2>
+        <p id="selected-time">Loading...</p> 
+        <h3>Note</h3>
+        <p id="note-content">Loading...</p> 
+    </div>
+    
+    <div class="task">
+        <h2>Task</h2>
+        <h2>Task Details:</h2>
+        <p>Take a break: <span id="taskSlider1">5</span></p>
+        <p>Get off the phone: <span id="taskSlider2">10</span></p>
+        <p>Go exercise: <span id="taskSlider3">15</span></p>
+        <p>Eat or drink now: <span id="taskSlider4">20</span></p>
+    </div>
+        <!-- New controls for Notification Gap and Mute Sound -->
+    <div class="task-settings">
+            <label for="notificationGap">Notification Gap (hours): </label>
+            <input type="number" id="notificationGap" min="1" value="1">
+            <label for="muteSound">Mute Sound:</label>
+            <input type="checkbox" id="muteSound">
+        </div>
+    
+    
+    <div id="floating-logo">
+    <a href="LoginPage.html">
+        <img src="transparent logo.png" alt="Logo">
+    </a>
+</div>
+
+<link rel="stylesheet" href="logo.css">
+<script src="logo.js" defer></script>
+    
+    <script src="notifications.js" defer></script>
+    <script src="widget.js" defer></script>
+    <script src="calendar.js"></script>
+</body>
+<div id="floating-logo">
+    <a href="LoginPage.html">
+        <img src="transparent logo.png" alt="Logo">
+    </a>
+</div>
+
+<link rel="stylesheet" href="logo.css">
+<script src="logo.js" defer></script>
+</html>
